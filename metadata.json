@@ -1,0 +1,8 @@
+{
+  "name": "SOCH Rozgar - Pakistan's Talent-to-Income Network",
+  "description": "An end-to-end talent-to-income platform transforming potential into prosperity: AI-guided talent discovery, structured learning paths, team-based real project delivery, and the complete SOCH ecosystem.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
