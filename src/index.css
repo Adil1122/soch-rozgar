@@ -10,10 +10,6 @@
   font-family: 'Kalam', 'Caveat', cursive, sans-serif;
 }
 
-.font-urdu {
-  font-family: 'Noto Nastaliq Urdu', serif, system-ui;
-}
-
 /* Custom smooth pulse & glow animations for the interactive ring */
 @keyframes pulse-subtle {
   0%, 100% {
@@ -28,6 +24,21 @@
 
 .animate-pulse-subtle {
   animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-280px) scale(1.4);
+  }
+}
+
+.animate-floatUp {
+  animation: floatUp 2.4s ease-out forwards;
 }
 
 /* Custom scrollbar styling */

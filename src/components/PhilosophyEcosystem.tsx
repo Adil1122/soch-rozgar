@@ -29,8 +29,8 @@ export const PhilosophyEcosystem: React.FC<PhilosophyEcosystemProps> = ({ onSele
           {
             letter: 'S',
             word: 'Seek',
-            meaning: 'Discover your direction',
-            urdu: 'تلاش',
+            meaning: 'Discover your direction & purpose',
+            category: 'Clarity',
             icon: Compass,
             color: 'from-teal-500 to-emerald-600',
             textColor: 'text-teal-600',
@@ -40,7 +40,7 @@ export const PhilosophyEcosystem: React.FC<PhilosophyEcosystemProps> = ({ onSele
             letter: 'O',
             word: 'Observe',
             meaning: 'Identify problems & opportunities',
-            urdu: 'مشاہدہ',
+            category: 'Awareness',
             icon: Eye,
             color: 'from-blue-500 to-sky-600',
             textColor: 'text-sky-600',
@@ -49,8 +49,8 @@ export const PhilosophyEcosystem: React.FC<PhilosophyEcosystemProps> = ({ onSele
           {
             letter: 'C',
             word: 'Create',
-            meaning: 'Build something valuable',
-            urdu: 'تخلیق',
+            meaning: 'Build something valuable for clients',
+            category: 'Mastery',
             icon: Hammer,
             color: 'from-violet-500 to-purple-600',
             textColor: 'text-purple-600',
@@ -59,8 +59,8 @@ export const PhilosophyEcosystem: React.FC<PhilosophyEcosystemProps> = ({ onSele
           {
             letter: 'H',
             word: 'Hope',
-            meaning: 'Believe in a better future',
-            urdu: 'امید',
+            meaning: 'Believe in an empowered future',
+            category: 'Prosperity',
             icon: SunMedium,
             color: 'from-amber-500 to-orange-600',
             textColor: 'text-amber-600',
@@ -75,7 +75,7 @@ export const PhilosophyEcosystem: React.FC<PhilosophyEcosystemProps> = ({ onSele
                   <span className={`w-9 h-9 rounded-xl bg-gradient-to-br ${item.color} text-white font-black text-lg flex items-center justify-center shadow-xs`}>
                     {item.letter}
                   </span>
-                  <span className="font-urdu text-sm font-bold text-slate-500">{item.urdu}</span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400">{item.category}</span>
                 </div>
                 <h3 className="text-xl font-black text-slate-900 mt-3">{item.word}</h3>
                 <p className="text-xs text-slate-600 mt-1 font-medium">{item.meaning}</p>
@@ -114,14 +114,14 @@ export const PhilosophyEcosystem: React.FC<PhilosophyEcosystemProps> = ({ onSele
         </div>
       </div>
 
-      {/* The Core Creed Quote */}
-      <div className="p-8 rounded-3xl bg-slate-900 text-white shadow-xl text-center relative overflow-hidden">
+      {/* The Core Creed Quote (Synced emerald/teal palette, English only) */}
+      <div className="p-8 rounded-3xl bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900 text-white shadow-xl text-center relative overflow-hidden border border-emerald-800/60">
         <div className="absolute top-0 right-0 translate-x-12 -translate-y-12 w-64 h-64 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-emerald-400 font-bold max-w-3xl mx-auto leading-relaxed">
+        <div className="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-emerald-300 font-bold max-w-3xl mx-auto leading-relaxed">
           "Talent should not remain unemployed because opportunity was unavailable."
         </div>
-        <p className="mt-4 text-xs sm:text-sm text-slate-400 font-medium font-urdu">
-          ہنر مند افراد بے روزگار نہ رہیں صرف اس لیے کہ موقع میسر نہیں تھا
+        <p className="mt-4 text-xs sm:text-sm text-emerald-200/80 font-semibold tracking-wider uppercase">
+          The National Creed of SOCH Rozgar
         </p>
       </div>
     </div>

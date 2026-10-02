@@ -46,7 +46,7 @@ export const NetworkPoster: React.FC<NetworkPosterProps> = ({
   const [hoveredStage, setHoveredStage] = useState<number | null>(null);
 
   return (
-    <div className="relative w-full max-w-[1480px] mx-auto bg-gradient-to-b from-sky-50/70 via-white to-slate-50 border border-slate-200/80 shadow-2xl rounded-3xl overflow-hidden my-4 sm:my-8">
+    <div className="relative w-full mx-auto bg-gradient-to-b from-sky-50/70 via-white to-slate-50 border border-slate-200/80 shadow-xl rounded-2xl sm:rounded-3xl overflow-hidden my-2 sm:my-4">
       {/* Background Panorama Banner with Margalla Hills */}
       <div className="absolute top-0 left-0 right-0 h-96 sm:h-[480px] overflow-hidden opacity-35 pointer-events-none select-none">
         <img
@@ -57,10 +57,10 @@ export const NetworkPoster: React.FC<NetworkPosterProps> = ({
         <div className="absolute inset-0 bg-gradient-to-b from-sky-100/40 via-white/80 to-white"></div>
       </div>
 
-      <div className="relative z-10 p-4 sm:p-8 lg:p-10 space-y-8">
+      <div className="relative z-10 p-3 sm:p-6 lg:p-8 space-y-6 sm:space-y-8">
         {/* ================= TOP HEADER ================= */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 border-b border-slate-200/80 pb-6">
-          {/* Left: SOCH Brand Logo */}
+          {/* Left: SOCH Rozgar Brand Logo */}
           <div className="flex items-center space-x-3.5">
             <div className="flex items-center tracking-tight">
               <span className="text-4xl sm:text-5xl font-black text-slate-800">S</span>
@@ -74,13 +74,14 @@ export const NetworkPoster: React.FC<NetworkPosterProps> = ({
                 </div>
               </div>
               <span className="text-4xl sm:text-5xl font-black text-slate-800">CH</span>
+              <span className="ml-2.5 text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-600">Rozgar</span>
             </div>
             <div className="border-l-2 border-emerald-600 pl-3.5">
               <h2 className="text-sm sm:text-base font-extrabold uppercase tracking-wide text-emerald-800">
-                Talent to Income Platform
+                SOCH Rozgar
               </h2>
-              <p className="text-xs text-slate-500 font-medium font-urdu">
-                پاکستان کا پہلا ہنر سے روزگار کا خود مختار نیٹ ورک
+              <p className="text-xs text-slate-500 font-medium">
+                Pakistan's Autonomous Talent-to-Income Network
               </p>
             </div>
           </div>
@@ -581,20 +582,20 @@ export const NetworkPoster: React.FC<NetworkPosterProps> = ({
         </div>
 
         {/* ================= BOTTOM SECTION: THE SOCH ECOSYSTEM ================= */}
-        <div className="relative rounded-3xl bg-slate-900 text-white p-6 sm:p-8 overflow-hidden shadow-2xl border border-slate-800">
+        <div className="relative rounded-2xl sm:rounded-3xl bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900 text-white p-6 sm:p-8 overflow-hidden shadow-xl border border-emerald-800/60">
           
           {/* Subtle background glow */}
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 border-b border-slate-800 pb-6 mb-6">
+          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 border-b border-emerald-800/60 pb-6 mb-6">
             <div className="text-center lg:text-left">
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-300">
                 A Complete Architecture
               </span>
               <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
                 The SOCH Ecosystem
               </h3>
-              <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-xl">
+              <p className="text-xs sm:text-sm text-emerald-100/90 mt-1 max-w-xl">
                 More than a platform. It's a complete economic empowerment ecosystem for Pakistan's youth.
               </p>
             </div>
@@ -603,14 +604,14 @@ export const NetworkPoster: React.FC<NetworkPosterProps> = ({
               <img
                 src={youthCollaborating}
                 alt="Youth collaborating outdoors in Islamabad"
-                className="w-20 h-14 object-cover rounded-xl border border-slate-700 shadow-md hidden sm:block"
+                className="w-20 h-14 object-cover rounded-xl border border-emerald-700/60 shadow-md hidden sm:block"
               />
               <div className="text-right">
-                <div className="font-handwriting text-xl sm:text-2xl text-emerald-400 font-bold">
+                <div className="font-handwriting text-xl sm:text-2xl text-emerald-300 font-bold">
                   "A Skilled Pakistan, A Brighter Future"
                 </div>
-                <div className="text-[11px] text-slate-400 font-medium">
-                  ہنر مند پاکستان • خوشحال مستقبل
+                <div className="text-[11px] text-emerald-200/80 font-medium">
+                  Empowering Talent Across Every Province
                 </div>
               </div>
             </div>
@@ -635,7 +636,7 @@ export const NetworkPoster: React.FC<NetworkPosterProps> = ({
                 <div
                   key={pillar.id}
                   onClick={() => onSelectPillar(pillar)}
-                  className="group rounded-2xl p-3 sm:p-3.5 flex flex-col items-center text-center cursor-pointer transition-all duration-200 hover:-translate-y-1 hover:shadow-lg border border-slate-700/80 bg-slate-800/80 hover:bg-slate-800"
+                  className="group rounded-2xl p-3 sm:p-3.5 flex flex-col items-center text-center cursor-pointer transition-all duration-200 hover:-translate-y-1 hover:shadow-lg border border-emerald-700/50 bg-emerald-900/60 hover:bg-emerald-850/80"
                 >
                   <div 
                     className="w-11 h-11 rounded-xl flex items-center justify-center text-white mb-2 shadow-md group-hover:scale-110 transition-transform"
@@ -656,12 +657,12 @@ export const NetworkPoster: React.FC<NetworkPosterProps> = ({
           </div>
 
           {/* From Potential to Prosperity Continuous Pipeline */}
-          <div className="mt-8 pt-6 border-t border-slate-800 flex flex-col items-center">
-            <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">
+          <div className="mt-8 pt-6 border-t border-emerald-800/60 flex flex-col items-center">
+            <div className="text-xs font-bold uppercase tracking-wider text-emerald-300 mb-3">
               From Potential to Prosperity
             </div>
             
-            <div className="w-full flex items-center justify-between overflow-x-auto no-scrollbar py-2 text-xs sm:text-sm font-bold text-slate-200 gap-2 sm:gap-4">
+            <div className="w-full flex items-center justify-between overflow-x-auto no-scrollbar py-2 text-xs sm:text-sm font-bold text-white gap-2 sm:gap-4">
               {[
                 { title: 'Discover', icon: '🔍' },
                 { title: 'Learn', icon: '📚' },
@@ -672,12 +673,12 @@ export const NetworkPoster: React.FC<NetworkPosterProps> = ({
                 { title: 'Create Opportunities for Others', icon: '🤝' },
               ].map((step, idx, arr) => (
                 <React.Fragment key={idx}>
-                  <div className="flex items-center space-x-1.5 shrink-0 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-white hover:border-emerald-500 transition-colors">
+                  <div className="flex items-center space-x-1.5 shrink-0 px-3 py-1.5 rounded-full bg-emerald-900/80 border border-emerald-700/60 text-white hover:border-emerald-400 transition-colors">
                     <span>{step.icon}</span>
                     <span>{step.title}</span>
                   </div>
                   {idx < arr.length - 1 && (
-                    <span className="text-emerald-500 font-extrabold shrink-0 text-sm">➔</span>
+                    <span className="text-emerald-400 font-extrabold shrink-0 text-sm">➔</span>
                   )}
                 </React.Fragment>
               ))}
